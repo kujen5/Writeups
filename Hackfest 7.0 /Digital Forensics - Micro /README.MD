@@ -46,7 +46,7 @@ After analyzing the code, we can see that this is basically a ransomware, it is 
 <br />
 <br />
 And now we have the key and the confidential file, all we need to do now is to decrypt it, I prefer to write a decryptor script and not use tools but you may use Cyberchef: \
-![img](images/image_2023-06-25_125800730.png)\
+![img](images/image_2023-06-25_130120983.png)\
 <br />
 <br />
 And we get our flag:\ 
