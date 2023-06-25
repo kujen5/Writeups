@@ -89,7 +89,7 @@ print("Decrypted file path:", decrypted_file)
 ````
 <br>
 </br>
-And we get our flag: \
+And we get our flag: 
 <br>
 </br>
 <div class="force-word-wrap">
