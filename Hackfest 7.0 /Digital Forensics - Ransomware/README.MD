@@ -50,7 +50,7 @@ This gives us a .pyc python-compiled byte code, let's break it down using the py
 </br>
 From all the information we have above, and having the key, IV, and the encrypted flag ``file.txt.enc`` we can now write our decryptor file (you can also use an online tool like Cyberchef): \
 ![img](images/image_2023-06-25_160645358.png)
-``from Crypto.Cipher import AES
+```from Crypto.Cipher import AES
 
 def decrypt_file(file_path, key, iv):
     chunk_size = 64 * 1024  
@@ -86,7 +86,7 @@ with open('dessktop.ini', 'rb') as keyfile:
         key = keyfile.read()
 decrypted_file = decrypt_file(file_path, key, iv)
 print("Decrypted file path:", decrypted_file)
-``
+```
 <br>
 </br>
 And we get our flag: \
