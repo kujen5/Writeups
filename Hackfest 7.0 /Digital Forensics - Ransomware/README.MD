@@ -33,6 +33,6 @@ We can see that this is an executable file. After some research, we found that t
 This gives us a .pyc python-compiled byte code, let's break it down using the pycdc tool from github to get the source code: \
 ![img](images/image_2023-06-25_154246708.png)
 From all the information we have above, and having the key, IV, and the encrypted flag ``file.txt.enc`` we can now write our decryptor file (you can also use an online tool like Cyberchef): \
-![img](image_2023-06-25_160645358.png)
+![img](images/image_2023-06-25_160645358.png)
 And we get our flag: \
 ``Hackfest{y0u_truly-4re_4-f0rensic5_1nvest1gat0r}``
