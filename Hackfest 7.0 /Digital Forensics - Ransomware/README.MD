@@ -92,4 +92,8 @@ print("Decrypted file path:", decrypted_file)
 And we get our flag: \
 <br>
 </br>
-``Hackfest{y0u_truly-4re_4-f0rensic5_1nvest1gat0r}``
+<div class="force-word-wrap">
+
+```Hackfest{y0u_truly-4re_4-f0rensic5_1nvest1gat0r}```
+
+</div>
