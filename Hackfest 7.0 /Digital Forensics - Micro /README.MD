@@ -49,5 +49,5 @@ And now we have the key and the confidential file, all we need to do now is to d
 ![img](images/image_2023-06-25_130120983.png)\
 <br />
 <br />
-And we get our flag:\ 
+And we get our flag: \ 
 Hackfest{macros_g0t_Noth1n9_on_mEEEE}
