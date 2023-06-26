@@ -25,9 +25,7 @@ Also we go ahead and check the source code:\
 </br>
 It says that every report has an id, so there must be parameters we could use. With ``report`` and ``id`` there are a few combinations we could take:\
 <br>
-</br> ``report=&id=``, ``report_id=``, ``id_report=``. So we need to take our time to test all these parameters. But finally we get that the one we'll be using is ``report=&id=``. And since the author talked about downloading reports it might be vulnerable to LFI, which it is! But you will not find this payload on any cheat sheet :\
-<br>
-</br>p you will need to use some logic:\
+</br> ``report=&id=``, ``report_id=``, ``id_report=``. So we need to take our time to test all these parameters. But finally we get that the one we'll be using is ``report=&id=``. And since the author talked about downloading reports it might be vulnerable to LFI, which it is! But you will not find this payload on any cheat sheet :p you will need to use some logic:\
 <br>
 </br>
 ![img](images/image_2023-06-25_221346724.png)\
