@@ -159,10 +159,7 @@ And if we look closer at the description it said that it must be all lowercase, 
 ![img](images/image_2023-06-25_231850578.png)\
 <br>
 </br>
-And we get our first flag:\
-<br>
-</br> 
-``Hackfest{70de14735437fb48ccc1c85604983b5c}``
+And we get our first flag: ``Hackfest{70de14735437fb48ccc1c85604983b5c}``
 Enumerating the machine, we find that this user has some hidden files under his home directory:\
 <br>
 </br>
@@ -177,18 +174,14 @@ We open it and we get the creds for iwd user (shoutout to my good friend iwd):\
 ![img](images/image_2023-06-25_233142947.png)\
 <br>
 </br>
-The password is:\
-<br>
-</br> ``CryptoIs5omtime5UsEFuL``
+The password is:``CryptoIs5omtime5UsEFuL``
 So we go ahead and ssh into the machine using iwd user:\
 <br>
 </br>
 ![img](images/image_2023-06-25_233848208.png)\
 <br>
 </br>
-And we get the second flag:\
-<br>
-</br> ``Hackfest{65f69907711675ddb07e832539333a6f}``
+And we get the second flag:``Hackfest{65f69907711675ddb07e832539333a6f}``
 Enumerating the machine we find that iwd user can execute this command as sudo:\
 <br>
 </br>
@@ -208,6 +201,4 @@ This is basically an email checker that requires a specific format as specified 
 <br>
 </br>
 And yes we are ROOT!
-And here is out final flag:\
-<br>
-</br> ``Hackfest{7a899205babaab8623b7cb007b843115}``
+And here is out final flag:``Hackfest{7a899205babaab8623b7cb007b843115}``
