@@ -75,9 +75,7 @@ Enuermating the machine we find nothing useful for privilege escalation, but che
 ![img](images/image_2023-06-25_223347505.png)\
 <br>
 </br>
-This is a filtered web application, so let's try and forward the port to our local machine so we can access it with ease (ps:\
-<br>
-</br> you can exploit the vulnerability without doing a port forwarding, doing it from inside the machine):\
+This is a filtered web application, so let's try and forward the port to our local machine so we can access it with ease (ps: you can exploit the vulnerability without doing a port forwarding, doing it from inside the machine):\
 <br>
 </br>
 ![img](images/image_2023-06-25_225508169.png)\
