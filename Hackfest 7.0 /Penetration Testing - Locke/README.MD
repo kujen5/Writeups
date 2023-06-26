@@ -102,7 +102,7 @@ Hmm interesting, it says that only the admin had the key, so we need to get what
 After a bunch of different payloads we figure that this is vulernable to Blind SQL Injection, so I wrote a small payload in python to exploit this vulnerability:\
 <br>
 </br>
-``python
+````python
 #!/usr/bin/python
 import requests
 def string(start,end):
@@ -125,7 +125,7 @@ def passwd():
                                 break
 if __name__ == '__main__':
         passwd()
-``
+````
 And we run it:\
 <br>
 </br>
