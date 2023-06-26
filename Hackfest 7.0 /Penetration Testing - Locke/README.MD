@@ -71,4 +71,17 @@ Enumerating the machine, we find that this user has some hidden files under his 
 ![img](images/image_2023-06-25_232511782.png)
 I will not be going through this in detail, but this is the latest KeePass CVE released 3 weeks ago, yes we only bring you fresh meet ;) you can check out this repo and follow the steps to solve it: ``https://github.com/vdohney/keepass-password-dumper``
 We get the password for the keepass database is: ``mallafouedyesahby``
-
+We open it and we get the creds for iwd user (shoutout to my good friend iwd):
+![img](images/image_2023-06-25_233142947.png)
+The password is: ``CryptoIs5omtime5UsEFuL``
+So we go ahead and ssh into the machine using iwd user:
+![img](images/image_2023-06-25_233848208.png)
+And we get the second flag: ``Hackfest{65f69907711675ddb07e832539333a6f}``
+Enumerating the machine we find that iwd user can execute this command as sudo:
+![img](images/image_2023-06-25_233904294.png)
+And we can take a look at the source code for the bash script:
+![img](images/image_2023-06-25_234055785.png)
+This is basically an email checker that requires a specific format as specified in the script and it is vulnerable to command injection in the ``Request`` field, so let's exploit it:
+![img](images/image_2023-06-26_001223527.png)
+And yes we are ROOT!
+And here is out final flag: ``Hackfest{7a899205babaab8623b7cb007b843115}``
